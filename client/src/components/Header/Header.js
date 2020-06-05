@@ -5,7 +5,7 @@ import Headroom from 'react-headroom';
 
 export default function Header() {
   
-  const url = 'https://zeit.co/api/www/avatar/?u=evilrabbit&s=160';//test profilepic
+  const url = 'https://d3kxowhw4s8amj.cloudfront.net/file/data/nutjnnbv4kwaixxp75it/PHID-FILE-xnpfexxdxsjnmkhgani7/profile';//test profilepic
 
   return (
     <Headroom>

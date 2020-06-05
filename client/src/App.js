@@ -1,17 +1,24 @@
-import React from "react";
-import { ZeitProvider, CssBaseline } from '@zeit-ui/react'; //Zeit-UI
-import Header from "./components/Header/Header";
+import React, { Component } from "react";
 import Landing from "./containers/Landing/Landing";
 import Meet from "./containers/Search/Meet";
+import { Route } from "react-router-dom";
 
-function App() {
-  return (
-    <ZeitProvider>
-      <CssBaseline />
-      <Header />
-      <Meet />
-    </ZeitProvider>
-  );
+class App extends Component {
+
+  render(){
+        return(
+          <div>
+            <Route exact path='/' render={() => (
+              <Landing/>)}
+            />
+            
+            <Route exact path='/meet' component={() => (
+              <Meet/>)}
+            />
+          </div>
+      )
+    }
 }
+
 
 export default App;

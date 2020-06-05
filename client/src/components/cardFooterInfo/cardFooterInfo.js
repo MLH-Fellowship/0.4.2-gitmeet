@@ -10,6 +10,8 @@ export default class CardFooterInfo extends Component {
         
         const name = 'Kartik Choudhary';
 
+        const userData = this.props;
+
         return (
             <div className="cardFooter">
                 <div className="cardFooterLeft">
