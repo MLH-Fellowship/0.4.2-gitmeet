@@ -3,7 +3,7 @@ import Mdcard from "../../components/mdcard/Mdcard";
 import CardFooterInfo from "../../components/cardFooterInfo/cardFooterInfo";
 import MeetButton from "../../components/meetButton/meetButton";
 import "./Meet.css";
-import { Col, Spacer, Text, Card, Row, User, Link} from '@zeit-ui/react';
+import { Spacer, Text, Card, Row, User, Link} from '@zeit-ui/react';
 
 export default class Meet extends Component {
 
@@ -209,9 +209,6 @@ I made the following graphic to explain (my future self) how a release couscous 
 
 const md2 = `
 <h1 align="center">
-  <a href="https://github.com/abhishekashyap/CamAlert">
-    <img alt="CamAlert icon" src="CamAlert.png" width="300">
-  </a>
   <br>CamAlert<br>
 </h1>
 
@@ -266,12 +263,6 @@ $npm start
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Team
-
-| [![Abhishek Kashyap](https://github.com/abhishekashyap.png?size=100)](https://github.com/abhishekashyap) | [![Kartik Choudhary](https://github.com/kartik918.png?size=100)](https://github.com/kartik918) | [![Nischey Badyal](https://github.com/NB134.png?size=100)](https://github.com/NB134) | [![Pulkit Banta](https://github.com/PulkitBanta.png?size=100)](https://github.com/PulkitBanta) | [![Shubham Goel](https://github.com/shubhamgoel2525.png?size=100)](https://github.com/shubhamgoel2525) |
-| --- | --- | --- | --- | --- |
-| [Abhishek Kashyap](https://github.com/abhishekashyap) | [Kartik Choudhary](https://github.com/kartik918) | [Nischey Badyal](https://github.com/NB134) | [Pulkit Banta](https://github.com/PulkitBanta) | [Shubham Goel](https://github.com/shubhamgoel2525) |
-
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
@@ -310,7 +301,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
                 {this.state.meetCard === 'second' && 
                     <Card shadow type="lite" id="md-container">
-                        <Mdcard input={initialSource} />
+                        <Mdcard input={md2} />
                     <Card.Footer>
                     <div className="cardFooter">
                         <div className="cardFooterLeft">
