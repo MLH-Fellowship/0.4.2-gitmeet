@@ -21,6 +21,20 @@ npm start
 
 4. Visit `localhost:3000` in your web browser
 
+## Uses
+
+### Client side:
+- ReactJS, react-router-dom
+- showdown for MD rendering
+- zeit-ui, zeit icons
+- axios
+-SweetAlert
+
+### Server Side:
+- ExpressJS
+- DotENV
+- Mongoose (MongoDB)
+
 ## License
 
 Licensed under Apache 2 [License](LICENSE.md)
